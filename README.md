@@ -1,4 +1,4 @@
-# Booze Calc
+# Booze Calculator
 ##Buying booze? Get the most bang for your buck.
 
 ###Goal
