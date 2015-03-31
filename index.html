@@ -17,12 +17,14 @@
     <body ng-app="bc" class="boozecalc">
         <div ng-controller="Controller" class="boozecalc-container">
             <header>
+                <h1>Booze Calculator</h1>
+                <p>Buying booze? Get the most bang for your buck.</p>
                 <button class="booze-button" ng-click="addBooze()">add another booze</button>
                 <button class="booze-button" ng-click="sortBooze()">sort booze</button>
             </header>
             <fieldset ng-repeat="booze in boozes" class="booze-item">
                 <label class="booze-field field-name">
-                    <span class="field-label">name</span
+                    <span class="field-label">NAME</span
                     ><input type="text" ng-model="booze.name" class="field-value"/>
                 </label>
                 <label class="booze-field field-cost">
@@ -34,11 +36,11 @@
                     <input type="number" pattern="[0-9]*[.,]?[0-9]+" min="1" step="1" ng-model="booze.volume" class="field-value"/>
                 </label>
                 <label class="booze-field field-proof">
-                    <span class="field-label">proof</span>
+                    <span class="field-label">PROOF</span>
                     <input type="number" pattern="[0-9]*[.,]?[0-9]+" min="0.01" max="200" step="any" ng-model="booze.proof" class="field-value"/>
                 </label>
                 <span class="booze-field field-dollar-proof">
-                    <span class="field-label">$/proof</span>
+                    <span class="field-label">$/PROOF</span>
                     <span class="field-value" ng-show="getDollarPerProof(booze)">{{getDollarPerProof(booze) | currency}}</span>
                     <span class="field-value" ng-hide="getDollarPerProof(booze)">&mdash;</span>
                 </span>
@@ -46,7 +48,7 @@
             <footer>
                 <button class="booze-button" ng-click="addBooze()">add another booze</button>
                 <button class="booze-button" ng-click="sortBooze()">sort booze</button>
-                <p>Fill in the values for cost in dollars (<strong>$</strong>), volume in milliliters (<strong>mL</strong>), and alcohol content by volume in proof (<strong>proof</strong>). Results will be the cost of 5 mL of pure alcohol (dollars per proof).</p>
+                <p>Fill in the values for cost in dollars (<strong>$</strong>), volume in milliliters (<strong>mL</strong>), and alcohol content by volume in proof (<strong>PROOF</strong>). Results will be the cost of 5 mL of pure alcohol (<strong>$/PROOF</strong>).</p>
             </footer>
         </div>
     </body>
