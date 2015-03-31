@@ -16,6 +16,9 @@
                         return false;
                     }
                 }), $scope.getDollarPerProof);
+            if ($scope.boozes.length === 0) {
+                $scope.addBooze();
+            }
         }
         $scope.getDollarPerProof = function(booze) {
             var dollarPerLiter = (booze.cost / booze.volume) * 1000;
