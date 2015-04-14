@@ -111,7 +111,7 @@ textarea {
     display: inline-block;
 }
 .field-name .field-value {
-    width: calc(100% - 55px);
+    width: calc(100% - 58px);
 }
 .field-cost .field-value,
 .field-volume .field-value,
@@ -120,7 +120,7 @@ textarea {
     width: 80px;
 }
 .field-dollar-proof {
-    width: 100;
+    width: 100%;
     text-align: right;
 }
 .field-dollar-proof .field-value {
