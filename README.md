@@ -10,4 +10,4 @@ We all have our preferences when money is no object. But sometimes we have to sh
 ###Development
 This calculator is built mobile first. It must be useable and convenient on your phone in the liquor store. I haven't done extensive device testing, but I am open to tweaks to help out any modern device. Minimum styling and native form elements are preferred.
 
-[Use the live demo.](http://zrgmedia.com/boozecalc)
+[Use the live demo.](http://boozecalc.zrgmedia.com)
